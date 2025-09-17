@@ -1,0 +1,54 @@
+.anchor
+.DS_Store
+target
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
+
+# Node / TypeScript
+node_modules/
+dist/
+build/
+.cache/
+.temp/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Rust / Cargo (nested targets too)
+**/target/
+
+# Anchor / Solana local artifacts
+**/.anchor/
+# If you keep any local ledgers elsewhere
+**/test-ledger/
+
+# Solana keypairs (generated under target/deploy)
+# Covered by **/target/, but kept for clarity
+**/target/deploy/*.json
+
+
